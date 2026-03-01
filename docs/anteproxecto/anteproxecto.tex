@@ -1,0 +1,142 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{parskip}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titlespacing*{\section}{0pt}{1em}{0.5em}
+\titlespacing*{\subsection}{0pt}{0.8em}{0.3em}
+
+\title{
+    \textbf{Propuesta Técnica} \\[0.3cm]
+    \large Digitalización e Indexación de Registros Históricos\\
+    de Emigración a Cuba desde A Coruña
+}
+\author{
+    Marcelo Ferreiro Sánchez\\
+    \small \href{mailto:marcelo.fsanchez@udc.es}{marcelo.fsanchez@udc.es} \\
+    \small +34 604 023 998
+    \and
+    José Romero Conde\\
+    \small \href{mailto:j.rconde@udc.es}{j.rconde@udc.es} \\
+    \small +34 658 755 850
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+% -----------------------------------------------
+\section*{Pipeline Técnico}
+% -----------------------------------------------
+
+\textbf{1. Digitalización.} Los documentos serán escaneados a alta resolución,
+generando archivos master que se conservarán localmente. Quedando a futuro la
+decisión del tipo de escáner a utilizar, es necesario contemplar si es de interés
+para el público o las instituciones el tener acceso a escaneos de alta resolución
+(más de 600 DPI).
+
+\textbf{2. Preprocesado.} Cada imagen será procesada automáticamente para corregir 
+perspectiva, eliminar ruido y normalizar la calidad antes de su análisis. 
+
+\textbf{3. Reconocimiento de texto manuscrito (HTR).} Se empleará un sistema de
+HTR adaptado específicamente a la tipografía y características de los
+manuscritos de época, garantizando una extracción fiable de los datos de cada
+registro. Se probarán los motores de extracción de caracteres \textit{open
+source} actuales, y en caso de no obtener unos resultados óptimos, no se
+descarta la posibilidad de aplicar un ajuste fino con los propios datos escaneados.
+
+\textbf{4. Estructuración y base de datos.} La información extraída se
+almacenará en una base de datos relacional, vinculando cada campo con su
+localización exacta en el documento original. Se incluirá una versión comprimida
+del escaneo para consulta web.
+
+\textbf{5. Plataforma web.} Se desarrollará una interfaz pública de consulta que permitirá 
+buscar registros por nombre, fecha u otros campos, y visualizar el documento original asociado.
+
+
+% -----------------------------------------------
+\section*{Equipo}
+% -----------------------------------------------
+
+El equipo está formado por Marcelo Ferreiro y José Romero, ambos estudiantes en
+último curso del Grado en Inteligencia Artificial por la Universidade da Coruña.
+
+
+% -----------------------------------------------
+\section*{Requisitos Hardware, Software y de Cloud}
+% -----------------------------------------------
+
+\subsection*{Hardware}
+El proyecto requiere cierta potencia de cómputo debido a la muy posible
+necesidad de aplicar un ajuste fino (\textit{fine tuning}) a los sistemas de HTR,
+lo que requiere de una unidad de procesamiento gráfico con suficiente memoria
+dedicada (más de 16GB), como una NVIDIA RTX 5080 o similar. 
+
+Por otra parte, el otro requisito hardware presente, más crítico, es el
+almacenamiento. Aún sin conocer con precisión la dimensión de los registros,
+es necesario asegurar un guardado fiable, seguro y \textbf{redundante} de los
+datos escaneados y extraídos. Estos dos requisitos requieren de la disposición
+de un ordenador con una GPU de las características mencionadas, y capacidad
+suficiente con redundancia local, probablemente con dos discos completamente
+redundantes en espejo (RAID 1). Un equipo fiable que reúna tales características
+puede rondar los 4.000€, incluyendo todos los periféricos necesarios para su uso.
+
+En el año posterior al comienzo del proyecto podría evaluarse la necesidad de un
+equipo de almacenamiento extra (un NAS) para disponer de redundancia en dos
+equipos físicos separados. No sería necesario durante el primer año, ya que no se
+dispondría aún de una cantidad de datos que lo haga necesario. Su coste es
+considerablemente menor al del resto del hardware mencionado (menos de 800€).
+
+Por último, quedando aún por decidir el método de digitalización, puede
+ser necesario un escáner de formato A3 de alta resolución (más de 600 DPI).
+En tal caso será necesario el uso de un escáner tipo \textit{flatbed} o de V,
+que respete los lomos de los registros. Un equipo de tales características
+puede rondar los 600€.
+
+\subsection*{Software}
+Se estiman los requisitos software como nulos, ya que se plantea el uso de
+herramientas con licencias abiertas en todas las partes del proyecto.
+
+\subsection*{Cloud}
+Quedando por establecer el cómo y dónde se va a hospedar la plataforma, es necesario
+estimar el coste de mantenimiento en la nube. Utilizando servicios como Azure, AWS
+o Hetzner, el coste de mantener tanto la página web de consultas como la base de
+datos puede estimarse en unos 100€ mensuales, dependiendo del tamaño del archivo,
+que queda por determinar.
+
+Este gasto en infraestructura en la Nube no sería necesario en caso de que sea
+posible mantener la página y la base de datos en los servidores de la Xunta, en
+tal caso su costo sería marginal. 
+
+% -----------------------------------------------
+\section*{Presupuesto}
+% -----------------------------------------------
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Concepto} & \textbf{Importe anual} \\
+\midrule
+Honorarios (Marcelo Ferreiro)          & 10.000 € \\
+Honorarios (José Romero)               & 10.000 € \\
+Hardware (año 1: torre + escáner)      &  4.600 € \\
+Hardware (año 2 estimado: NAS)         &    800 € \\
+Software                               &      0 € \\
+Servicios Cloud(en caso de ser necesario)                      &  1.200 € \\
+\midrule
+\textbf{Total año 1}                   & \textbf{25.800 €} \\
+\textbf{Total año 2 y sucesivos}       & \textbf{22.000 €} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}
