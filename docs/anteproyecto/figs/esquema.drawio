@@ -1,0 +1,39 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.15 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.15">
+  <diagram name="Página-1" id="Wm9Z3jxDKPAcmyNBT73c">
+    <mxGraphModel dx="1485" dy="1132" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BP6yrbFbjc8Si5rI3uRI-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BP6yrbFbjc8Si5rI3uRI-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="435" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BP6yrbFbjc8Si5rI3uRI-7" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.diocesispalencia.org/images/Estaticos/ArchivoDioce03.jpg;clipPath=inset(27% 36.67% 35.5% 41.67%);" vertex="1" parent="1">
+          <mxGeometry x="350" y="340" width="164.66666666666669" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="BP6yrbFbjc8Si5rI3uRI-8" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://image.irislink.com/rework_eshop/product/ISD6Pro/ISD6Pro-illustration_eshop-02.jpg;" vertex="1" parent="1">
+          <mxGeometry x="550" y="200" width="170" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="BP6yrbFbjc8Si5rI3uRI-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="BP6yrbFbjc8Si5rI3uRI-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1320" y="435.27272727272725" as="targetPoint" />
+            <mxPoint x="940" y="435" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BP6yrbFbjc8Si5rI3uRI-12" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png;" vertex="1" parent="1">
+          <mxGeometry x="940" y="220" width="170" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="BP6yrbFbjc8Si5rI3uRI-15" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://static.thenounproject.com/png/5079138-200.png;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="335" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="BP6yrbFbjc8Si5rI3uRI-16" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cdn-icons-png.flaticon.com/512/29/29072.png;" vertex="1" parent="1">
+          <mxGeometry x="770" y="354.5" width="161" height="161" as="geometry" />
+        </mxCell>
+        <mxCell id="BP6yrbFbjc8Si5rI3uRI-18" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://static.vecteezy.com/system/resources/previews/007/126/469/non_2x/internet-website-click-icon-vector.jpg;clipPath=inset(17.33% 16.33% 17.33% 15.67%);" vertex="1" parent="1">
+          <mxGeometry x="1360" y="337.5" width="202.96" height="195" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
