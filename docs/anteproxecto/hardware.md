@@ -1,1 +1,2 @@
 ### Escaner: https://www.scansnap.es/shop/pa03641-b301-scansnap-sv600-122#attr=26
+### Otro escáner mejor y más barato al parecer: CZUR ET24 Pro, al parecer el software tiene cierta curva de aprendizaje pero va fino.
