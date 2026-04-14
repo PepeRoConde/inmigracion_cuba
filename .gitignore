@@ -11,3 +11,7 @@
 # vim xd
 
 *.swp
+
+# mac
+
+.DS_Store
